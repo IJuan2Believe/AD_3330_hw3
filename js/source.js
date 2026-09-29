@@ -151,13 +151,14 @@ $("#tasks-list").html(taskHtml);
 
 //jquery ui widget changes
 
+
 //buttons
 $("button").button();
 
-    // b. Convert dashboardTabs into Tabs widget
-    $("#dashboardTabs").tabs();
+//dashboard
+$("#dashboardTabs").tabs();
 
-    // c. Convert customerDialog into a Dialog widget
+//dialog widget
     $("#customerDialog").dialog({
         autoOpen: false,
         modal: true,
@@ -179,18 +180,20 @@ $("button").button();
         }
     });
 
-    // d. Convert accordion into an Accordion widget
-    $("#accordion").accordion({
-        collapsible: true,
-        heightStyle: "content"
-    });
+//accordion widget
+$("#accordion").accordion({
+    collapsible: true,
+    heightStyle: "content"
+});
 
-    // e. Event listener to open customer dialog when button is clicked
-    $("#newCustomerButton").click(function () {
-        $("#customerDialog").dialog("open");
-    });
+//event listener 
+$("#newCustomerButton").click(function () {
+$("#customerDialog").dialog("open");
+});
 
-    // f. Convert customerDate into a Datepicker widget
-    $("#customerDate").datepicker();
+//convert datepicker widget
+$("#customerDate").datepicker();
 
-    });
+});
+
+// i was supposed to add the js changes in another branch, my b
